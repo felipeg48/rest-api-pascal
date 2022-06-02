@@ -1,0 +1,36 @@
+= Rest API in Pascal
+
+== Requirements
+
+- Install `fpc`
++
+[source,shell]
+----
+brew install fpc
+----
+
+== Build
+
+- Clone this Repo
+- Compile the code with the following command
++
+[source,shell]
+----
+cd rest-api-pascal
+fpc RestAPI.pas
+----
+
+- Execute the app:
++
+[source,shell]
+----
+./RestAPI
+----
+
+- Open a new terminal and execute the curl commands:
++
+[source,shell]
+----
+curl -XGET http://localhost:9080/greeting/felipe
+curl -XGET http://localhost:9080/time
+----
